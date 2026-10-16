@@ -1,1 +1,70 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happy Birthday 💗</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;text-align:center;font-family:Georgia,serif;color:#8e214f;background:linear-gradient(145deg,#fff8fb,#ffe0ec);padding:24px;box-sizing:border-box}.card{max-width:650px;padding:32px 24px;border:1px solid #ffc4da;border-radius:28px;background:#ffffffbb;box-shadow:0 20px 60px #c72e7220}h1{font-size:clamp(2.7rem,10vw,5rem);margin:10px 0}p{font:1.1rem/1.8 system-ui;color:#98657b}.heart{font-size:5rem;animation:beat 1.3s infinite}@keyframes beat{50%{transform:scale(1.15)}}button{border:0;border-radius:99px;padding:15px 22px;background:#e93680;color:white;font-weight:bold;font-size:1rem;cursor:pointer}#note{display:none}#note:target{display:block}</style></head><body><main class="card"><div class="heart">💗</div><h1>Happy Birthday,<br><i>Beautiful</i> ✨</h1><p>Today the world got a little more magical, because someone as special as you was born. May your day be filled with love, laughter, and beautiful surprises.</p><p><a href="#note"><button>Open your little surprise 💌</button></a></p><p id="note">You make ordinary moments feel special. May this year bring you beautiful memories, kind people, dreams that come true, and countless reasons to smile. Happy birthday! 🌷💖</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe6f0">
+<title>Happy Birthday, Beautiful 💗</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#75344f;background:radial-gradient(circle at 15% 5%,#fff 0,transparent 30%),linear-gradient(145deg,#fff8fb,#ffe1ed 58%,#fff7fa)}
+button{font:inherit;touch-action:manipulation}#sky,#bursts{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:5}.float{position:absolute;bottom:-55px;left:var(--x);font-size:var(--s);animation:rise var(--d) linear forwards;filter:drop-shadow(0 3px 6px #c32f6c25)}@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.9}100%{transform:translate(var(--drift),-115vh) rotate(var(--rot));opacity:0}}
+.twinkle{position:fixed;color:#fff;text-shadow:0 0 13px #ee4e91;pointer-events:none;animation:twinkle 1.8s ease-in-out infinite alternate;z-index:1}@keyframes twinkle{to{opacity:.25;transform:scale(.55) rotate(35deg)}}
+.page{position:relative;z-index:2;width:min(740px,calc(100% - 26px));margin:auto;padding:28px 0 48px;text-align:center}.pill{display:inline-block;border:1px solid #ffc2d8;background:#ffffffbf;border-radius:99px;padding:9px 15px;color:#a42c60;font-size:.77rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+h1{font:500 clamp(2.65rem,10vw,5.1rem)/.98 Georgia,serif;letter-spacing:-.04em;color:#9b285a;margin:21px 0 17px}h1 em{color:#ee4c91}.intro{max-width:570px;margin:0 auto;color:#99657b;line-height:1.85;font-size:clamp(1rem,3.8vw,1.14rem)}
+.heart{position:relative;font-size:90px;line-height:1.35;filter:drop-shadow(0 8px 15px #eb4c913c);animation:heartbeat 1.6s infinite;display:inline-block;margin:10px 0}@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}24%{transform:scale(1)}38%{transform:scale(1.07)}}
+.panel{margin:22px auto 0;padding:clamp(18px,4.8vw,29px);border:1px solid #ffc5da;border-radius:27px;background:#ffffffc4;box-shadow:0 18px 48px #c52c6712;backdrop-filter:blur(9px)}h2{margin:0 0 8px;font:500 clamp(1.55rem,5vw,2.1rem) Georgia,serif;color:#9b285a}.sub{line-height:1.7;color:#99657b;margin:0 auto 16px}
+.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.btn{min-height:51px;padding:12px 13px;border:1px solid #f6b7d0;border-radius:99px;background:#fff;color:#992957;font-weight:750;cursor:pointer;box-shadow:0 7px 17px #bf286517;transition:transform .18s,box-shadow .18s}.btn.primary{background:linear-gradient(135deg,#ff8fba,#e93680);color:white;border:0}.btn:active{transform:scale(.96)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px #bf28652b}.btn:focus-visible{outline:3px solid #a42b63;outline-offset:3px}
+.note{display:none;text-align:left;margin-top:15px;padding:20px;border-radius:20px;border:1px solid #f5bad0;background:linear-gradient(140deg,#fff,#fff0f6);line-height:1.9;box-shadow:0 10px 26px #ad1e5410}.note.open{display:block;animation:appear .4s ease both}.note h3{font:500 1.45rem Georgia,serif;color:#9b285a;margin:0 0 8px}.note p{margin:0}@keyframes appear{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+#surpriseText{font:500 clamp(1.2rem,4vw,1.6rem) Georgia,serif;color:#a52c63;line-height:1.65;margin-top:18px;min-height:2em}.footer{margin:22px 0 0;color:#a16a81;font-size:.9rem;line-height:1.9}.toast{position:fixed;bottom:17px;left:50%;transform:translate(-50%,20px);z-index:20;max-width:calc(100% - 25px);padding:12px 18px;border-radius:99px;background:#9b285a;color:white;box-shadow:0 8px 23px #78204430;opacity:0;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:440px){.page{padding-top:21px}.buttons{grid-template-columns:1fr}.btn{min-height:49px}.panel{border-radius:22px}.heart{font-size:80px}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div><div id="bursts" aria-hidden="true"></div>
+<main class="page">
+<div class="pill">✦ a little surprise made with love ✦</div>
+<div class="heart" id="mainHeart" aria-label="Pink heart">💗</div>
+<h1>Happy Birthday,<br><em>Beautiful</em> ✨</h1>
+<p class="intro">Today the world got a little more magical because someone as special as you was born. May your day be soft as roses, bright as stars, and full of little moments that make your heart smile. You deserve so much happiness. 🌷</p>
+<section class="panel">
+<h2>A few little things, just for you 💌</h2>
+<p class="sub">Tap the buttons, birthday girl. Each one makes a little bit of magic happen!</p>
+<div class="buttons">
+<button class="btn primary" id="sparkleBtn">✨ Make it sparkle</button>
+<button class="btn" id="showerBtn">💗 Shower me with hearts</button>
+<button class="btn" id="letterBtn">💌 Open your letter</button>
+<button class="btn primary" id="wishBtn">🕯️ Make a birthday wish</button>
+<button class="btn" id="surpriseBtn">🎀 Surprise me</button>
+<button class="btn primary" id="giantBtn">💖 Send a giant heart</button>
+<button class="btn" id="allBtn" style="grid-column:1/-1">🌸 Unwrap all the surprises 🌸</button>
+</div>
+<div class="note" id="letter"><h3>For the girl who makes life sweeter 🌸</h3><p>Your smile can turn an ordinary moment into a beautiful memory. I hope this new year brings you peaceful days, silly laughter, dreams that come true, and people who remind you how special you are. Never forget that you deserve kindness, joy, and all the lovely things life can bring. 💗</p></div>
+<div class="note" id="wish"><h3>A wish just for you 🕯️</h3><p>Close your eyes and make your sweetest wish. May new adventures find you, may you feel loved even on the quiet days, and may you always have a reason to smile. Here's to a year full of wonderful surprises and unforgettable memories. ✨</p></div>
+<div id="surpriseText" aria-live="polite">Your little surprises are waiting here… ♡</div>
+</section>
+<p class="footer">Wrapped in pink, sprinkled with magic, and sent with love.<br>🌷 Happy Birthday, beautiful 🌷</p>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+const sky=document.getElementById('sky'),bursts=document.getElementById('bursts'),toastEl=document.getElementById('toast');let toastTimer;
+const pick=a=>a[Math.floor(Math.random()*a.length)],rand=(a,b)=>Math.random()*(b-a)+a;
+function toast(t){toastEl.textContent=t;toastEl.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),2300)}
+function floatItem(symbol){const e=document.createElement('span');e.className='float';e.textContent=symbol;e.style.setProperty('--x',rand(0,96)+'%');e.style.setProperty('--s',rand(20,43)+'px');e.style.setProperty('--d',rand(3.5,6.7)+'s');e.style.setProperty('--rot',rand(-100,100)+'deg');e.style.setProperty('--drift',rand(-75,75)+'px');sky.appendChild(e);setTimeout(()=>e.remove(),7200)}
+function shower(n=48){for(let i=0;i<n;i++)setTimeout(()=>floatItem(pick(['💗','💖','💕','💘','💞','🌸','🌷'])),i*38)}
+function sparkle(n=50){const r=document.getElementById('mainHeart').getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2;for(let i=0;i<n;i++){const e=document.createElement('span');e.textContent=pick(['✦','✧','✨','♡','⋆']);e.style.cssText='position:fixed;left:'+x+'px;top:'+y+'px;color:'+pick(['#ff3f91','#ff91ba','#fff','#e94386'])+';font-size:'+rand(16,31)+'px;text-shadow:0 0 14px #ff73b6;pointer-events:none;transition:transform 1.2s ease-out,opacity 1.2s;z-index:9';bursts.appendChild(e);const a=Math.PI*2*i/n,d=rand(70,205);requestAnimationFrame(()=>{e.style.transform='translate('+Math.cos(a)*d+'px,'+Math.sin(a)*d+'px) rotate('+rand(-220,220)+'deg) scale(.4)';e.style.opacity='0'});setTimeout(()=>e.remove(),1300)}}
+function open(id){document.getElementById(id).classList.add('open')}
+function showMessage(t){document.getElementById('surpriseText').textContent=t}
+document.getElementById('sparkleBtn').addEventListener('click',()=>{sparkle(65);shower(12);toast('A little magic, just for you ✨')});
+document.getElementById('showerBtn').addEventListener('click',()=>{shower(65);sparkle(26);toast('A sky full of hearts, just for you! 💗')});
+document.getElementById('letterBtn').addEventListener('click',()=>{open('letter');showMessage('You are worthy of every beautiful thing this world has to offer. 💌');toast('A little letter from the heart')});
+document.getElementById('wishBtn').addEventListener('click',()=>{open('wish');shower(24);toast('Make your sweetest wish 🕯️')});
+document.getElementById('surpriseBtn').addEventListener('click',()=>{showMessage(pick(['You make the world feel a little brighter. 💖','May your day be full of tiny joys and big smiles. 🌷','Sending you a thousand wishes wrapped in pink. 🎀','You deserve a whole universe of happiness. ✨','Keep shining in your own beautiful way. 💗']));sparkle(36);shower(20);toast('Surprise, birthday girl! 🎀')});
+document.getElementById('giantBtn').addEventListener('click',()=>{const h=document.getElementById('mainHeart');h.animate([{transform:'scale(1)'},{transform:'scale(1.65)'},{transform:'scale(1)'}],{duration:900});shower(48);sparkle(42);showMessage('Sending you the biggest, warmest, heart-shaped hug! 💖');toast('Big heart incoming!')});
+document.getElementById('allBtn').addEventListener('click',()=>{open('letter');open('wish');shower(85);sparkle(65);showMessage('Every sparkle is a wish, every heart is a hug, and this whole little page is here to celebrate YOU. Happy birthday! 💕');toast('All your surprises are open! 🌸')});
+for(let i=0;i<24;i++){const e=document.createElement('span');e.className='twinkle';e.textContent=pick(['✦','✧','⋆']);e.style.left=rand(2,98)+'%';e.style.top=rand(3,96)+'%';e.style.fontSize=rand(10,22)+'px';e.style.animationDelay=rand(0,2)+'s';document.body.appendChild(e)}
+shower(8);setInterval(()=>floatItem(pick(['♡','✧','💗','⋆'])),850);
+})();
+</script>
+</body>
+</html>
